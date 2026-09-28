@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jaideep Chowdary Gundarapu — Computer Science Graduate | AI/ML">
+<title>Jaideep Chowdary Gundarapu | CSE Graduate</title>
+<style>
+:root{
+  --bg:#080b12; --surface:#101522; --surface2:#151c2c; --text:#eef2ff;
+  --muted:#a8b1c7; --accent:#7c8cff; --accent2:#42d9c8; --border:#252e42;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(8,11,18,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.5px}.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:25px;color:var(--muted);font-size:.93rem}
+.nav-links a:hover{color:white}
+.hero{min-height:100vh;display:grid;place-items:center;padding-top:70px;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.22;pointer-events:none}
+.hero:before{width:380px;height:380px;background:#6c63ff;top:8%;left:-120px}
+.hero:after{width:330px;height:330px;background:#18c8b5;right:-100px;bottom:4%}
+.hero-content{position:relative;z-index:1;max-width:900px}
+.eyebrow{color:var(--accent2);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.82rem;margin-bottom:15px}
+h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;letter-spacing:-4px;margin-bottom:24px}
+.gradient{background:linear-gradient(90deg,#fff,#aeb8ff 55%,#63eadc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:720px;color:var(--muted);font-size:1.12rem}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 19px;border-radius:12px;border:1px solid var(--border);background:var(--surface);font-weight:700}
+.btn.primary{background:var(--accent);color:#090b12;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+section{padding:100px 0}
+.section-title{font-size:2rem;margin-bottom:10px}
+.section-sub{color:var(--muted);margin-bottom:38px}
+.grid{display:grid;gap:20px}
+.about-grid{grid-template-columns:1.1fr .9fr}
+.card{background:linear-gradient(145deg,rgba(21,28,44,.96),rgba(13,18,30,.96));border:1px solid var(--border);border-radius:20px;padding:26px}
+.card p{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.stat{padding:20px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.stat strong{display:block;font-size:1.65rem}.stat span{color:var(--muted);font-size:.9rem}
+.timeline{position:relative;margin-top:25px}
+.timeline:before{content:"";position:absolute;left:9px;top:5px;bottom:5px;width:2px;background:var(--border)}
+.timeline-item{position:relative;padding-left:38px;margin-bottom:32px}
+.dot{position:absolute;left:3px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(124,140,255,.12)}
+.meta{color:var(--accent2);font-size:.85rem;font-weight:700}.role{font-size:1.2rem;font-weight:800;margin:4px 0}.company{color:var(--muted);margin-bottom:10px}
+ul{padding-left:20px;color:var(--muted)}li{margin:6px 0}
+.projects{grid-template-columns:repeat(2,1fr)}
+.project h3{font-size:1.25rem;margin-bottom:8px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.tag{font-size:.78rem;padding:5px 9px;border-radius:999px;background:#1c2538;color:#cdd5ff;border:1px solid #2a3550}
+.skills{grid-template-columns:repeat(2,1fr)}
+.skill-row{margin:14px 0}.skill-row strong{display:block;margin-bottom:6px}.skill-row span{color:var(--muted)}
+.list-grid{grid-template-columns:repeat(2,1fr)}
+footer{padding:40px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact a{color:var(--accent2)}
+@media(max-width:760px){
+  .nav-links{display:none}.about-grid,.projects,.skills,.list-grid,.contact{grid-template-columns:1fr}
+  h1{letter-spacing:-2px}.hero{min-height:92vh}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#home">jd<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+      <a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container hero-content">
+    <div class="eyebrow">Computer Science Graduate · AI/ML Enthusiast</div>
+    <h1>Jaideep Chowdary <span class="gradient">Gundarapu</span></h1>
+    <p>Computer Science and Engineering graduate with a strong foundation in machine learning, NLP, Python, SQL, and core computer science concepts. I built practical AI-driven solutions through academic projects and hands-on experience, with a focus on solving real-world problems using data and intelligent systems.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="https://drive.google.com/file/d/1AIZGWX96e08omwxBrmsl-dmOZ6S0imfI/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
+      <a class="btn" href="mailto:jaideepchowdary.1234@gmail.com">Contact Me</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+<div class="container">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-sub">Building practical AI solutions for real-world problems.</p>
+  <div class="grid about-grid">
+    <div class="card">
+      <p>Computer Science and Engineering student interested in Artificial Intelligence and Machine Learning, with hands-on experience in machine learning, NLP, recommender systems, data preprocessing, model training, and evaluation.</p>
+      <br>
+      <p>I completed my B.Tech in Computer Science and Engineering (IoT) from R.V.R. & J.C. College of Engineering, Guntur, with a CGPA of 8.98.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>8.98</strong><span>B.Tech CGPA</span></div>
+      <div class="stat"><strong>2</strong><span>Featured AI/ML projects</span></div>
+      <div class="stat"><strong>2</strong><span>NPTEL certifications</span></div>
+      <div class="stat"><strong>2022–2026</strong><span>B.Tech CSE (IoT)</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+  <h2 class="section-title">Experience</h2>
+  <p class="section-sub">Academic projects and professional experience across AI/ML and software development.</p>
+  <div class="timeline">
+    <div class="timeline-item"><div class="dot"></div>
+      <div class="meta">MAY 2025 — JUN 2025</div><div class="role">AI/ML Summer Intern</div><div class="company">TriaRight Solutions · Hyderabad, Telangana</div>
+      <ul><li>Strengthened practical knowledge of AI/ML core, including supervised and unsupervised learning techniques.</li><li>Learned data preprocessing, model training workflows, and evaluation of machine learning models.</li><li>Developed familiarity with Python-based tools and core Natural Language Processing (NLP) concepts used in real-world applications.</li></ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+  <h2 class="section-title">Featured Projects</h2>
+  <p class="section-sub">Selected academic projects in AI/ML and machine learning.</p>
+  <div class="grid projects">
+    <article class="card project">
+      <div class="meta">NOV 2025 — APR 2026</div>
+      <h3>Adaptive Movie Recommendation System with Dynamic Taste Profiling</h3>
+      <p>Designed an adaptive movie recommendation system that combined content-based filtering with sequential preference modeling. TF-IDF and cosine similarity captured movie-content relevance, while an LSTM learned viewing patterns and preference transitions. A FastAPI backend handled user interactions, model updates, and recommendation delivery.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">AI/ML</span><span class="tag">TF-IDF</span><span class="tag">LSTM</span><span class="tag">FastAPI</span><span class="tag">Recommender Systems</span></div>
+    </article>
+    <article class="card project">
+      <div class="meta">DEC 2023 — FEB 2024</div>
+      <h3>SMS Spam Detection using Machine Learning</h3>
+      <p>Developed an NLP-based SMS spam classifier that used machine learning to distinguish unwanted messages from legitimate communication, achieving approximately 96% classification accuracy.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">NLP</span><span class="tag">Classification</span><span class="tag">96% Accuracy</span></div>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+  <h2 class="section-title">Technical Skills</h2>
+  <p class="section-sub">Technologies and capabilities from my professional and academic work.</p>
+  <div class="grid skills">
+    <div class="card">
+      <div class="skill-row"><strong>Programming Languages</strong><span>Python · SQL · Java (Basic)</span></div>
+      <div class="skill-row"><strong>Machine Learning</strong><span>Classification · Regression · Clustering · Model Evaluation · Pandas · NumPy · Scikit-learn · Matplotlib</span></div>
+      <div class="skill-row"><strong>Core Computer Science</strong><span>Data Structures & Algorithms · DBMS · OOPS</span></div>
+    </div>
+    <div class="card">
+      <div class="skill-row"><strong>Developer Tools</strong><span>VS Code · Git · GitHub · Jupyter Notebook · Arduino IDE · Copilot · Claude · Antigravity</span></div>
+      <div class="skill-row"><strong>Strengths</strong><span>Collaborative teamwork · Problem solving · Flexibility in adapting to new technology · Strong communication & comprehension</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="focus">
+<div class="container">
+  <h2 class="section-title">What I Work With</h2>
+  <p class="section-sub">Technical areas I have worked with across academic projects, internships, and self-driven learning.</p>
+  <div class="grid projects">
+    <article class="card project">
+      <div class="meta">AI / MACHINE LEARNING</div>
+      <h3>Machine Learning & NLP</h3>
+      <p>Classification, regression, clustering, model evaluation, natural language processing, feature engineering, and practical ML workflows using Python.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">NLP</span></div>
+    </article>
+    <article class="card project">
+      <div class="meta">INTELLIGENT APPLICATIONS</div>
+      <h3>Recommender Systems & Deep Learning</h3>
+      <p>Content-based recommendation, sequential preference modeling, LSTM-based learning, and building application backends that connect models with user interactions.</p>
+      <div class="tags"><span class="tag">TF-IDF</span><span class="tag">LSTM</span><span class="tag">FastAPI</span><span class="tag">Recommender Systems</span></div>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+  <h2 class="section-title">Education & Certifications</h2>
+  <p class="section-sub">Academic background, certifications, and extracurricular involvement.</p>
+  <div class="grid list-grid">
+    <div class="card">
+      <h3>Certifications</h3>
+      <ul><li>Psychology of Stress, Health, and Well-being — NPTEL (82%)</li><li>Cloud Computing — NPTEL (81%)</li></ul>
+    </div>
+    <div class="card">
+      <h3>Education</h3>
+      <ul>
+        <li>B.Tech CSE (IoT) — R.V.R. & J.C. College of Engineering, Guntur, 2022–2026</li>
+        <li>CGPA: 8.98</li>
+        <li>Intermediate (MPC) — 93.4%</li>
+        <li>Class X — CGPA 10.0</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Extracurricular Activities</h3>
+      <ul><li>Volunteer — NSS at RVR & JC College</li><li>Volunteer — Innovation, Design and Entrepreneurship (IDE) Bootcamp organized by AICTE and MIC</li><li>Participant — SMART IDEA CHALLENGE 2023</li></ul>
+    </div>
+    <div class="card">
+      <h3>Profile</h3>
+      <ul><li>AI/ML-focused Computer Science and Engineering student</li><li>Interested in machine learning, NLP, recommender systems, and practical software development</li></ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <h2 class="section-title">Let’s Connect</h2>
+  <p class="section-sub">Interested in AI/ML, machine learning, NLP, and practical software projects.</p>
+  <div class="card contact">
+    <div><strong>Email</strong><br><a href="mailto:jaideepchowdary.1234@gmail.com">jaideepchowdary.1234@gmail.com</a></div>
+    <div><strong>Phone</strong><br><a href="tel:+918143999069">+91 81439 99069</a></div>
+    <div><strong>GitHub</strong><br><a href="https://github.com/Jaideep-Gundarapu" target="_blank" rel="noopener noreferrer">github.com/Jaideep-Gundarapu</a></div>
+    <div><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/jaideep-gundarapu-3395a4311" target="_blank" rel="noopener noreferrer">linkedin.com/in/jaideep-gundarapu</a></div>
+  </div>
+</div>
+</section>
+
+<footer><div class="container">© 2026 Jaideep Chowdary Gundarapu · Computer Science Graduate</div></footer>
+</body>
+</html>
